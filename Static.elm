@@ -5,5 +5,8 @@ import Html.Attributes as Attributes
 
 
 main =
-    Html.code [ Attributes.style [ ( "border", "1px solid black" ) ] ]
-        [ Html.text "Hello world!" ]
+    let
+        style =
+            Attributes.style [ ( "border", "1px solid black" ) ]
+    in
+        Html.code [ style ] [ Html.text "Hello world!" ]
